@@ -19,12 +19,14 @@ a, a:visited {
 .centerFlex {
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   height: 100%;
 }
 
 .container {
-  width: 50%;
+  max-width: 40em;
+  margin: 0 1em;
   text-align: left;
 }
 
