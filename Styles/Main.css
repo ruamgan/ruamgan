@@ -121,3 +121,8 @@ nav {
   height: 100%;
   border: 0;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
