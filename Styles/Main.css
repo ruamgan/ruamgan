@@ -1,9 +1,16 @@
+:root {
+  --dark-gray: #303030;
+  --light-gray: #a5a5a5;
+  --off-white: #f8f8f8;
+  --purple: #6B68F1;
+}
+
 html {
   font-size: 16pt;
   font-family: "Comfortaa", "Verdana", sans-serif;
   font-weight: 300;
-  color: #303030;
-  background-color: #f8f8f8;
+  color: var(--dark-gray);
+  background-color: var(--off-white);
   height: 100%;
 }
 
@@ -13,7 +20,7 @@ body {
 }
 
 a, a:visited {
-  color: #6B68F1;
+  color: var(--purple);
 }
 
 nav {
@@ -26,20 +33,20 @@ nav {
   justify-content: center;
   align-items: flex-end;
   flex-direction: column;
-  background: #f8f8f8;
+  background: var(--off-white);
   opacity: 1;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: #303030;
+  color: var(--dark-gray);
   padding: .25rem;
   font-size: 0.75rem;
   font-weight: bold;
 }
 
 .nav-links a:hover {
-  color: #6B68F1;
+  color: var(--purple);
 }
 
 .hidden-nav {
@@ -75,7 +82,7 @@ nav {
 
 .breadcrumbs, .breadcrumbs a {
   font-weight: bold;
-  color: #a5a5a5;
+  color: var(--light-gray);
   text-decoration: none;
 }
 
@@ -93,12 +100,12 @@ nav {
 /* Add a slash symbol (/) before/behind each list item */
 .breadcrumbs ul li+li:before {
   padding: 0 0.1rem;
-  color: #a5a5a5;
+  color: var(--light-gray);
   content: "/\00a0";
 }
 
 .breadcrumbs ul li a:hover {
-  color: #6B68F1;
+  color: var(--purple);
 }
 
 .centerFlex {
@@ -119,7 +126,7 @@ nav {
 #title h1 {
   font-size: 2rem;
   font-weight: 700;
-  color: #a5a5a5;
+  color: var(--light-gray);
   text-transform: lowercase;
   margin: 0;
 }
