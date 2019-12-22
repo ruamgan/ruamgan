@@ -16,12 +16,70 @@ a, a:visited {
   color: #6B68F1;
 }
 
+nav {
+  padding: .5rem;
+  position: fixed;
+  flex: 1;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  background: #f8f8f8;
+  opacity: 1;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #303030;
+  padding: .25rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #6B68F1;
+}
+
+.hidden-nav {
+  display: flex;
+  align-items: center;
+  padding: .5rem;
+  height: 2.5rem;
+}
+
+.hamburger {
+  display: flex;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* when hamburger icon is checked, nav links will pop out */
+#menu-toggle:checked ~ .nav-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-links {
+  display: none;
+}
+
+.nav-links a {
+  flex: 1 0;
+  text-align: left;
+}
+
 .centerFlex {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   height: 100%;
+  margin-right: 0.5rem;
 }
 
 .container {
