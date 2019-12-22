@@ -73,6 +73,34 @@ nav {
   text-align: left;
 }
 
+.breadcrumbs, .breadcrumbs a {
+  font-weight: bold;
+  color: #a5a5a5;
+  text-decoration: none;
+}
+
+/* Style the list */
+.breadcrumbs ul {
+  padding: 0;
+  list-style: none;
+}
+
+/* Display list items side by side */
+.breadcrumbs ul li {
+  display: inline;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+.breadcrumbs ul li+li:before {
+  padding: 0 0.1rem;
+  color: #a5a5a5;
+  content: "/\00a0";
+}
+
+.breadcrumbs ul li a:hover {
+  color: #6B68F1;
+}
+
 .centerFlex {
   align-items: center;
   display: flex;
